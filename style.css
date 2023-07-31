@@ -1,8 +1,43 @@
+* {
+    box-sizing: border-box;
+}
 p {
     color: black;
 }
 body {
-    background-color: lavender;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    background: #f7f5f0;
+}
+header {
+    text-align: center;
+    background: url('../Max-s-Website/images/ClevelandSkylineNeo-Rouge-copy.jpg') no-repeat ;
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 60px;
+}
+header {
+    line-height: 1.5;
+}
+header .profile-image {
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid black;
+    transition: all .5s;
+    rotate: 360deg;
+}
+header .profile-image:hover {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
 }
 h1 {
     font-size: 24px;
