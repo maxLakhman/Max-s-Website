@@ -42,12 +42,12 @@ body {
 }
 /* when you hover over the links they turn white */
 .nav a:hover {
-    color: pink;
+    color: blue;
 }
 
 header {
     text-align: center;
-    background: url('../Max-s-Website/images/ClevelandSkylineNeo-Rouge-copy.jpg') no-repeat ;
+    background: url('../Max-s-Website/images/pastel-blue-color-solid-background-1920x1080.png') no-repeat ;
     background-size: cover;
     overflow: hidden;
     padding-top: 60px;
@@ -75,20 +75,40 @@ header .profile-image:hover {
 h1 {
     font-size: 24px;
 }
-#smiley {
-    width: 400px;
-    height: auto;
+
+.cards {
+    display: flex;
 }
-/* Media query to shrink smiley face to 300px when viewport is equal to or smaller than 400px */
-@media only screen and (max-width: 400px) {
-    #smiley {
-        width: 300px;
-    }
+
+.card {
+    flex: 50%;
+    margin: 30px;
+    padding: 20px 40px 40px;
+    max-width: 500px;
+    text-align: center;
+    background: #fff;
+    border-bottom: 4px solid #ccc;
+    border-radius: 6px;
+    transition: all .5s;
 }
-/* Media query to set smiley face's width to percentage when viewport is equal to or smaller than 300px */
-@media only screen and (max-width: 300px) {
-    #smiley {
-        max-width: 300px;
-        width: 100%;
-    }
+.card:hover {
+    border-color: blue;
+}
+
+ul.skills {
+    padding: 0;
+    text-align: center;
+}
+
+.skills li {
+    border-radius: 6px;
+    display: inline-block;
+    background: #ff9904;
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+    background: #0399ff;
 }
